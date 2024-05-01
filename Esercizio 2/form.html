@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--Font-->
+
+
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--Bootstrap-->
+
+
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!--Font Awesome-->
+
+
+
+<body>
+    
+    <header class="mb-4"> <!--Menù di navigazione-->
+
+        <nav  class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark">
+            <div class="container-fluid">
+              <img src="img/duck2.png" alt="logo" width="60">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Anagrafica Utenti</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Storico Prestiti
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Help</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="bg-white form-control me-2" type="search" placeholder= "Search" aria-label="Search">
+                  <button class=" btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header> <!--Menu di navigazione-->
+
+
+        <main>
+
+
+          <div class="container">
+
+
+    <h1>Nuovo Libro</h1>
+
+    <form action="" method="get"> <!--Inizio Form-->
+
+    <div class="row"> <!--Prima Riga-->
+
+      <div class="col-6">
+
+      <div class="mb-3">
+
+        <label class="text-black" for="exampleInputEmail1" class="form-label">Nome Autore</label>
+        <input type="text" class="form-control" id="exampleInputtext1" placeholder="Inserisci il Nome Dell'autore" aria-describedby="texthelp">
+      </div>
+
+      </div>
+
+      <div class="col-6">
+
+      <div class="mb-3">
+        <label class="text-black" for="exampleInputtext1" class="form-label">Cognome Autore</label>
+        <input type="text" class="form-control" id="exampleInputtext1" placeholder="Inserisci il Cognome Dell'auotre" aria-describedby="texthelp">
+      </div>
+
+      </div>
+   
+   
+    </div> <!--Prima Riga-->
+
+      
+    
+    
+    <div>
+
+
+        <div class="mb-3">
+          <label class="text-black" for="exampleInputtext1" class="form-label">Titolo</label>
+          <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="texthelp" placeholder="Inserisci il titolo del Libro">
+          <div class=" text-secondary" id="texthelp" class="form-text">Titolo Versione Italiana</div>
+        </div>
+
+      </div>
+  
+
+    
+
+
+    <div class="row">
+
+   <div class="col-12 col-xl-4">
+
+    <div class="mb-3">
+
+    <label for="input-select">Genere</label>
+    <select class=" mt-2 form-select" aria-label="Default select example">
+     
+      <option selected>Scegli Genere</option>
+      <option value="1">Horror</option>
+      <option value="2">Thriller</option>
+      <option value="3">Fantasy</option>
+
+    </select>
+
+    </div>
+
+   </div>
+
+
+   <div class="col-12 col-xl-4">
+
+
+    <div class="mb-3">
+      <label for="formGrouptextInput" class=" text-nowrap form-label">Anno Di Pubblicazione</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci L'anno">
+    </div>
+
+
+   </div>
+
+
+   <div class="col-12 col-xl-4">
+
+
+    <div class="mb-3">
+      <label for="formGrouptextInput" class="form-label">Codice ISBN# </label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci il codice ISBN#">
+    </div>
+
+
+   </div>
+
+
+
+
+    </div>
+
+
+    <hr>
+
+
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul Libro"></textarea>
+    </div>
+
+
+    <div class="mb-3">
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Disponibile Anche in Digitale
+        </label>
+      </div>
+
+    </div>
+      
+
+   <div class="mb-3">
+
+<button class="btn btn-primary" type="button">Aggiungi Libro</button>
+
+
+
+   </div>
+
+
+      
+      
+
+
+
+    
+
+
+ </form> <!--Fine Form-->
+
+
+
+
+
+
+            
+        </main>
+
+
+    
+</body>
+</html>
